@@ -1,6 +1,8 @@
 import { createStore, combineReducers } from 'redux';
 import uuid from 'uuid';
 
+/* action generators */
+
 // ADD_EXPENSE
 const addExpense = (
   { 
@@ -19,8 +21,6 @@ const addExpense = (
     createdAt
   }
 });
-
-/* action generators */
 
 // REMOVE_EXPENSE
 const removeExpense = ({ id } = {}) => ({
